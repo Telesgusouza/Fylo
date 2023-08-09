@@ -1,0 +1,120 @@
+.container {
+  width: 100%;
+  background-color: var(--DBFooter);
+}
+
+.containerContent {
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.containerContent .imgLogo {
+  width: 140px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 20px;
+}
+@media (max-width: 680px) {
+  .containerContent {
+    padding-bottom: 20px;
+  }
+}
+
+.listContent {
+  display: flex;
+  justify-content: space-between;
+}
+.listContent ul {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 18px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+.listContent li {
+  display: flex;
+  align-items: center;
+  font-size: 0.84rem;
+  color: white;
+  transition: font-weight 0.2s ease;
+  cursor: pointer;
+}
+.listContent li img {
+  width: 15px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 10px;
+}
+.listContent li:hover {
+  font-weight: 700;
+}
+.listContent div {
+  display: flex;
+}
+.listContent div p {
+  max-width: 300px;
+  margin-left: 20px;
+  font-size: 0.82rem;
+}
+@media (max-width: 680px) {
+  .listContent {
+    flex-direction: column;
+  }
+  .listContent div:nth-child(1) {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  .listContent ul {
+    margin: 0;
+    grid-gap: 7px;
+  }
+  .listContent ul:nth-child(2) {
+    margin-bottom: 50px;
+  }
+  .listContent ul:nth-child(3) {
+    margin-bottom: 30px;
+  }
+  .listContent ul:nth-child(4) {
+    margin-bottom: 50px;
+  }
+  .listContent li img {
+    margin-right: 18px;
+  }
+  .listContent p {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.containerSocial {
+  min-width: 100px;
+  max-width: 100px;
+  margin-left: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.containerSocial img {
+  height: 13px;
+}
+.containerSocial div {
+  width: 27px;
+  height: 27px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media (max-width: 680px) {
+  .containerSocial {
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=styles.module.css.map */

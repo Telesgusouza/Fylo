@@ -1,0 +1,77 @@
+.container {
+  width: 100%;
+  padding: 70px 0 200px 0;
+  background-color: var(--DBMain);
+}
+
+.containerContent {
+  position: relative;
+
+  .Img {
+    position: absolute;
+    top: -38px;
+    left: 12px;
+    z-index: 5;
+  }
+}
+
+.containerComments {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+
+  article {
+    position: relative;
+    z-index: 10;
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+    background-color: var(--DBtestimonials);
+    box-shadow: 0 0 15px rgba(132, 132, 132, 0.016);
+
+    p {
+      font-size: 0.85rem;
+      line-height: 150%;
+    }
+  }
+
+  @media (max-width: 870px) {
+    grid-gap: 20px;
+  }
+
+  @media (max-width: 780px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.infoUser {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 30px;
+    height: 30px;
+
+    margin-right: 10px;
+
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  strong {
+    font-size: 0.8rem;
+  }
+
+  span {
+    font-size: 0.68rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,18 @@
+.container {
+  padding: 6px 15px;
+
+  border: 0;
+  border-radius: 50px;
+
+  font-weight: 700;
+
+  background-image: linear-gradient(
+    45deg,
+    var(--insideCallActionG1),
+    var(--insideCallActionG2)
+  );
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

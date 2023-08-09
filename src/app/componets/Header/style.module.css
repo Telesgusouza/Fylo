@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  padding: 30px 0px;
+  background-color: var(--DBIntroSignIn);
+}
+.container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container img {
+  width: 140px;
+  height: -moz-fit-content;
+  height: fit-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container ul {
+  display: flex;
+  flex-direction: row;
+}
+.container li {
+  margin-left: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+.container li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  width: 0%;
+  height: 1px;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+.container li:hover::after {
+  content: "";
+  width: 100%;
+  left: 0%;
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 30px 0px;
+  }
+  .container img {
+    width: 90px;
+  }
+}/*# sourceMappingURL=style.module.css.map */

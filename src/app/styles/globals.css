@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --DBIntroSignIn: hsl(217, 28%, 15%);
+  --DBMain: hsl(218, 28%, 13%);
+  --DBFooter: hsl(216, 53%, 9%);
+  --DBtestimonials: hsl(219, 30%, 18%);
+
+  --insideCallActionG1: #65e2d9;
+  --insideCallActionG2: #339ecc;
+  --RedError: hsl(0, 100%, 63%);
+
+  --fontSize: 14px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.box {
+  width: 100%;
+  max-width: 1140px;
+
+  margin: 0 auto;
+
+  padding: 0 20px;
+}
+
